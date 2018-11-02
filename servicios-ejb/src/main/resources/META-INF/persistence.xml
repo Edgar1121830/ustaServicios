@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="superint-dbsuper-jpa">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:jboss/env/jdbc/csupvi</jta-data-source>
+		<mapping-file>META-INF/servicios-orm.xml</mapping-file>
+				<class>co.com.servicios.modelo.Auditoria</class>
+		<class>co.com.servicios.modelo.Competencia</class>
+		<class>co.com.servicios.modelo.Cuadroautoevaluacion</class>
+		<class>co.com.servicios.modelo.CuadroautoevaluacionPK</class>
+		<class>co.com.servicios.modelo.Evaluacion</class>
+		<class>co.com.servicios.modelo.Fas</class>
+		<class>co.com.servicios.modelo.Habilidade</class>
+		<class>co.com.servicios.modelo.Ingreso</class>
+		<class>co.com.servicios.modelo.Inscripcion</class>
+		<class>co.com.servicios.modelo.Institucione</class>
+		<class>co.com.servicios.modelo.Instruccione</class>
+		<class>co.com.servicios.modelo.Nivele</class>
+		<class>co.com.servicios.modelo.Objetivo</class>
+		<class>co.com.servicios.modelo.Opcion</class>
+		<class>co.com.servicios.modelo.Opcionespreguntaseva</class>
+		<class>co.com.servicios.modelo.Opcionespreguntastarea</class>
+		<class>co.com.servicios.modelo.Persona</class>
+		<class>co.com.servicios.modelo.Preguntaseva</class>
+		<class>co.com.servicios.modelo.Preguntastarea</class>
+		<class>co.com.servicios.modelo.Recursospreta</class>
+		<class>co.com.servicios.modelo.Reportetarea</class>
+		<class>co.com.servicios.modelo.ReportetareaPK</class>
+		<class>co.com.servicios.modelo.Respuestapreta</class>
+		<class>co.com.servicios.modelo.RespuestapretaPK</class>
+		<class>co.com.servicios.modelo.Rol</class>
+		<class>co.com.servicios.modelo.Tarearecurso</class>
+		<class>co.com.servicios.modelo.TarearecursoPK</class>
+		<class>co.com.servicios.modelo.Tarea</class>
+		<class>co.com.servicios.modelo.Unidade</class>
+		<class>co.com.servicios.modelo.Unidadhabilidad</class>
+		<class>co.com.servicios.modelo.Personaopcion</class>
+		<class>co.com.servicios.modelo.PersonaopcionPK</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+		<properties>
+			<property name="eclipselink.jdbc.cache-statements" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
